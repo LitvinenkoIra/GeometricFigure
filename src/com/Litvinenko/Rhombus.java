@@ -15,7 +15,6 @@ public class Rhombus extends Quadrangle {
     }
 
     Rhombus() {
-        super();
     }
 
     Rhombus(double a_x0, double a_y0, double b_x0, double b_y0, double c_x0, double c_y0, double d_x0, double d_y0) {
@@ -32,14 +31,6 @@ public class Rhombus extends Quadrangle {
         double AC = GeometricFigure.getLength(a_x, a_y, c_x, c_y);
         double BD = GeometricFigure.getLength(b_x, b_y, d_x, d_y);
         return 0.5 * AC * BD;
-    }
-
-    public void moveVertical(double n) {
-        super.moveVertical(n);
-    }
-
-    public void moveHorizont(double n) {
-        super.moveHorizont(n);
     }
 
     public String Info() {

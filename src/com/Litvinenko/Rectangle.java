@@ -13,7 +13,6 @@ public class Rectangle extends Quadrangle {
     }
 
     Rectangle() {
-        super();
     }
 
     Rectangle(double a_x0, double a_y0, double b_x0, double b_y0, double c_x0, double c_y0, double d_x0, double d_y0) {
@@ -22,22 +21,10 @@ public class Rectangle extends Quadrangle {
             throw new IllegalArgumentException("Bad rectangle! Please,try to create an object again");
     }
 
-    public double getPerimeter() {
-        return super.getPerimeter();
-    }
-
     public double getArea() {
         double CB = GeometricFigure.getLength(c_x, c_y, b_x, b_y);
         double BA = GeometricFigure.getLength(b_x, b_y, a_x, a_y);
         return CB * BA;
-    }
-
-    public void moveVertical(double n) {
-        super.moveVertical(n);
-    }
-
-    public void moveHorizont(double n) {
-        super.moveHorizont(n);
     }
 
     public String Info() {
