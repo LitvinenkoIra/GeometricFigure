@@ -22,7 +22,7 @@ public class FigureFactory {
                 figure = new Trapeze(0, 0, 0, 2, 1, 2, 2, 0);
                 break;
             default:
-                figure = new Circle(0, 0, 1);
+                figure = null;
         }
 
         return figure;
